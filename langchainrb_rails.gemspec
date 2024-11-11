@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Rails wrapper for langchainrb gem"
   spec.homepage = "https://rubygems.org/gems/langchainrb_rails"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.0.0"
+  spec.required_ruby_version = ">= 2.7.8"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/andreibondarev/langchainrb_rails"
@@ -30,10 +30,10 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "langchainrb", ">= 0.7", "< 0.19"
+  spec.add_dependency "langchainrb", ">= 0.7"
 
   spec.add_development_dependency "pry-byebug", "~> 3.10.0"
   spec.add_development_dependency "yard", "~> 0.9.34"
-  spec.add_development_dependency "rails", "> 6.0.0"
+  spec.add_development_dependency "rails", "> 5.2.8"
   spec.add_development_dependency "generator_spec"
 end
